@@ -23,6 +23,7 @@ public class Main {
       w.searchAllWords(N, MAX_TIMEOUT);
       FileUtils f = new FileUtils();
       f.saveInFile("out_" + new Date().getTime() + ".json", w.getJSONObject());
+      System.out.println(w.getJSONObject());
     } catch (WebParseException e) {
       System.out.println("Error parsing the url");
     } catch (InterruptedException e) {
